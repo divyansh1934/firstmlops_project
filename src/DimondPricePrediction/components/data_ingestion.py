@@ -26,7 +26,7 @@ class DataIngestion:
             data=pd.read_csv(r"C:\project\firstmlops_project\notebooks\data\train.csv")  # we have to change this
             logging.info(" reading a df")
 
-            os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
+            os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)  # we ceate artifacts folder
             data.to_csv(self.ingestion_config.raw_data_path,index=False)
             logging.info(" i have saved the raw dataset in artifact folder")
             
