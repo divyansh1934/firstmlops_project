@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/project/firstmlops_project/mlruns/0/673b6a13a9704f0b9bb26c36d0131a02/artifacts
+end_time: 1706363781476
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 673b6a13a9704f0b9bb26c36d0131a02
+run_name: upbeat-fox-432
+run_uuid: 673b6a13a9704f0b9bb26c36d0131a02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706363773080
+status: 3
+tags: []
+user_id: Lenovo
