@@ -3,3 +3,8 @@
  * Running on http://127.0.0.1:8000
  * Running on http://192.168.1.35:8000
 [2024-01-28 16:53:40,084] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-01-28 16:54:27,020] 96 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2024 16:54:27] "GET / HTTP/1.1" 200 -
+[2024-01-28 16:54:27,132] 96 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2024 16:54:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-01-28 16:55:07,169] 96 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2024 16:55:07] "GET /predict HTTP/1.1" 200 -
+[2024-01-28 16:55:30,329] 68 root - INFO - Dataframe Gathered
+[2024-01-28 16:55:31,094] 96 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2024 16:55:31] "POST /predict HTTP/1.1" 200 -
