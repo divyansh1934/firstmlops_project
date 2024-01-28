@@ -3,7 +3,7 @@ import sys
 import pandas as pd
 from src.DimondPricePrediction.logger.logger import logging
 from src.DimondPricePrediction.exception import exception
-from src.utils.utils import load_object
+from src.DimondPricePrediction.utils.utils import load_object
 
 
 class PredictPipeline:
@@ -14,8 +14,8 @@ class PredictPipeline:
 
     def predict(self,features):
         try:
-            preprocessor_path=os.path.join("artifacts","preprocessor.pkl")
-            model_path=os.path.join("artifacts","model.pkl")
+            preprocessor_path=os.path.join("artifacts","preprocessor.pkl")   # we are taking preprocessing from artifact because Once the model is trained, it's beneficial to persist the trained model as an artifact. This allows you to reuse the model for future predictions without having to retrain it every time
+            model_path=os.path.join("artifacts","model.pkl")    # we are taking model from artificat
 
             preprocessor=load_object(preprocessor_path)
             model=load_object(model_path)
@@ -32,7 +32,7 @@ class PredictPipeline:
 class CustomData:
     def __init__(self,
                  carat:float,                     # it can be changed
-                 depth:float,
+                 depth:float,                     # we are initializing variable from app.py
                  table:float,
                  x:float,
                  y:float,
@@ -51,7 +51,7 @@ class CustomData:
         self.color = color
         self.clarity = clarity
             
-    def get_data_as_dataframe(self):
+    def get_data_as_dataframe(self):                    # this data will get or collect from app.py that user will input in the app and will convert it in dataframe
         try:
             custom_data_input_dict = {
                 'carat':[self.carat],      # it can be changed
